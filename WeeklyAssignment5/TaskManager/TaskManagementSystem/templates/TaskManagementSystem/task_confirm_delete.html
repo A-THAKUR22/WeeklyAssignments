@@ -1,0 +1,17 @@
+{% extends 'TaskManagementSystem/main.html' %}
+{% block content %}
+
+<div class="header-bar">
+    <a href="{% url 'tasks'%}">&#8592;Go Back</a>
+</div>
+
+<div class="card-body">
+    <form method="POST">
+        {% csrf_token %}
+        <p>Do you really wish to delete this task? "{{task}}"</p>
+        <input class="button1" type="submit" value="Delete"/>
+    </form>
+</div>
+
+
+{% endblock content %}
