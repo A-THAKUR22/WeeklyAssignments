@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "heart-disease-api"
+version = "0.1.0"
+description = ""
+authors = ["Amay Thakur"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.110.2"
+pydantic = "^2.7.1"
+pandas = "^2.2.2"
+uvicorn = "^0.29.0"
+mongoengine = "^0.28.2"
+scikit-learn = "1.4.2"
+pydantic-settings = "^2.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
