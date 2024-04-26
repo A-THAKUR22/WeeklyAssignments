@@ -55,3 +55,6 @@ async def disease_pred(features: HeartDiseaseFeatures):
  
     return {'output': diagnosis}
 
+@app.get("/health")
+async def health():
+    return {"status": "ok"}
